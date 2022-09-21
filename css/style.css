@@ -380,6 +380,11 @@ span {
 }
 
 
+.play-control-top i {
+    cursor: pointer;
+}
+
+
 
 
 .play-control-bottom {
@@ -395,6 +400,7 @@ span {
     margin: 0 0.4rem;
     height: 4px;
     border-radius: 4px;
+    cursor: pointer;
     background-color: var(--light-gray);
 }
 
@@ -416,4 +422,29 @@ span {
 
 .more-controls {
     width: 30%;
+    position: relative;
+    flex-flow: column;
+    justify-content: center
+}
+
+
+.more-controls-box {
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    position: absolute;
+    right: 0;
+}
+
+
+
+.more-controls-box i {
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+
+.small-time {
+    width: 50%;
+    min-width: 60px
 }
