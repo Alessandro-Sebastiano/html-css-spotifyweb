@@ -61,3 +61,68 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-weight: 800;
 }
+
+
+.flex-box {
+    display: flex;
+}
+
+
+
+
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.console {
+    width: 100%;
+    height: calc(100vh - 86px);
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.nav {
+    width: 234px;
+    height: 100%;
+    background-color: var(--dark);
+}
+
+
+
+.main-box {
+    width: calc(100% - 234px);
+    height: 100%;
+    align-self: flex-end;
+    background-color: var(--dark-blue);
+    overflow-y: scroll;
+}
+
+
+.main-box-nav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+.play-bar {
+    width: 100%;
+    height: 86px;
+    background-color: var(--gray);
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
