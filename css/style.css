@@ -310,6 +310,7 @@ span {
 .play-bar {
     width: 100%;
     height: 86px;
+    padding: 0.8rem 0;
     position: absolute;
     bottom: 0;
     background-color: var(--gray);
@@ -322,11 +323,14 @@ span {
 
 .song-info {
     padding: 0 0.6rem;
+    width: 30%;
+    min-width: 280px;
 }
 
 
 .song-info-image {
     width: 60px;
+    height: 60px;
 }
 
 
@@ -358,4 +362,58 @@ span {
 .icons i {
     margin: 0 0.4rem;
     cursor: pointer;
+}
+
+
+
+
+
+.play-controls {
+    width: 70%;
+}
+
+
+.play-control-top {
+    justify-content: space-between;
+    width: 230px;
+    margin: 0 auto;
+}
+
+
+
+
+.play-control-bottom {
+    max-width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+
+.time-bar {
+    width: 100%;
+    margin: 0 0.4rem;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--light-gray);
+}
+
+
+
+.time {
+    width: 30%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--light);
+}
+
+
+
+
+
+
+
+
+.more-controls {
+    width: 30%;
 }
