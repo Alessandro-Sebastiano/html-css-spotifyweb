@@ -422,6 +422,7 @@ span {
 
 .more-controls {
     width: 30%;
+    min-width: 280px;
     position: relative;
     flex-flow: column;
     justify-content: center
@@ -445,6 +446,5 @@ span {
 
 
 .small-time {
-    width: 50%;
-    min-width: 60px
+    width: 170px;
 }
