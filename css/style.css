@@ -101,7 +101,7 @@ span {
 
 .console {
     width: 100%;
-    height: calc(100vh - 86px);
+    height: calc(100% - 86px);
     justify-content: flex-start;
     align-items: center;
 }
@@ -110,6 +110,7 @@ span {
 
 .nav {
     position: relative;
+    flex-flow: column nowrap;
     width: 234px;
     height: 100%;
     padding: 1rem 0.8rem;
@@ -141,7 +142,9 @@ span {
 
 
 
-.nav-playlist {}
+.nav-playlist {
+    min-height: 200px;
+}
 
 
 .create {
@@ -210,7 +213,7 @@ span {
 
 
 .button {
-    border: 1px solid var(--light);
+    border: 2px solid var(--light);
     border-radius: 50px;
     padding: 0.8rem 1.8rem;
     display: inline-block;
@@ -307,7 +310,52 @@ span {
 .play-bar {
     width: 100%;
     height: 86px;
-    display: block;
+    position: absolute;
+    bottom: 0;
     background-color: var(--gray);
     z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.song-info {
+    padding: 0 0.6rem;
+}
+
+
+.song-info-image {
+    width: 60px;
+}
+
+
+.song-info-image img {
+    width: 100%;
+}
+
+
+
+.description {
+    margin: 0 1rem;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.description span {
+    margin: -0.1rem 0;
+}
+
+
+
+.icons {
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+
+.icons i {
+    margin: 0 0.4rem;
+    cursor: pointer;
 }
