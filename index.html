@@ -23,75 +23,81 @@
 
         <div class="console flex-box">
 
-            <div class="nav text-gray subtitle">
+            <div class="nav flex-box text-gray subtitle">
+
 
                 <div class="logo">
                     <img src="./img/logo.svg" alt="logo">
                 </div>
 
-                <div class="small-logo">
+                <div class="logo small-logo">
                     <img src="./img/logo-small.svg" alt="small-logo">
                 </div>
 
-                <div class="nav-menu">
+                <div class="nav-top">
 
-                    <div class="nav-menu-row flex-box">
+                    <div class="nav-menu">
 
-                        <i class="fa-solid fa-house small-title"></i>
+                        <div class="nav-menu-row flex-box">
 
-                        <span class="hidden"><a href="#">Home</a></span>
+                            <i class="fa-solid fa-house small-title"></i>
+
+                            <span class="hidden"><a href="#">Home</a></span>
+
+                        </div>
+
+                        <div class="nav-menu-row flex-box">
+
+                            <i class="fa-solid fa-magnifying-glass small-title"></i>
+
+                            <span class="hidden"><a href="#">Cerca</a></span>
+
+                        </div>
+
+                        <div class="nav-menu-row flex-box">
+
+                            <i class="fa-solid fa-lines-leaning small-title"></i>
+
+                            <span class="hidden"><a href="#">La tua libreria</a></span>
+
+                        </div>
 
                     </div>
 
-                    <div class="nav-menu-row flex-box">
+                    <div class="nav-playlist hidden subtitle">
 
-                        <i class="fa-solid fa-magnifying-glass small-title"></i>
+                        <span class="subtitle text-light">PLAYLIST</span>
 
-                        <span class="hidden"><a href="#">Cerca</a></span>
+                        <div class="create flex-box">
+                            <i class="fa-solid fa-square-plus title"></i>
+                            <span><a href="">Crea Playlist</a></span>
+                        </div>
+
+                        <span><a href="">Nome Playlist</a></span>
+                        <span><a href="">Nome Playlist</a></span>
+                        <span><a href="">Nome Playlist</a></span>
+                        <span><a href="">Nome Playlist</a></span>
+                        <span><a href="">Nome Playlist</a></span>
+                        <span><a href="">Nome Playlist</a></span>
+                        <span><a href="">Nome Playlist</a></span>
 
                     </div>
-
-                    <div class="nav-menu-row flex-box">
-
-                        <i class="fa-solid fa-lines-leaning small-title"></i>
-
-                        <span class="hidden"><a href="#">La tua libreria</a></span>
-
-                    </div>
-
                 </div>
 
-                <div class="nav-playlist hidden subtitle">
+                <div class="nav-bottom">
+                    <div class="user">
 
-                    <span class="subtitle text-light">PLAYLIST</span>
+                        <div class="download-row flex-box">
+                            <i class="fa-regular fa-circle-down"></i>
+                            <span class="hidden"><a href="#">Installa app</a></span>
+                        </div>
 
-                    <div class="create flex-box">
-                        <i class="fa-solid fa-square-plus title"></i>
-                        <span><a href="">Crea Playlist</a></span>
+                        <div class="user-row flex-box">
+                            <i class="fa-solid fa-circle-user title"></i>
+                            <span class="text-light hidden">John Doe</span>
+                        </div>
+
                     </div>
-
-                    <span><a href="">Nome Playlist</a></span>
-                    <span><a href="">Nome Playlist</a></span>
-                    <span><a href="">Nome Playlist</a></span>
-                    <span><a href="">Nome Playlist</a></span>
-                    <span><a href="">Nome Playlist</a></span>
-                    <span><a href="">Nome Playlist</a></span>
-                    <span><a href="">Nome Playlist</a></span>
-
-                </div>
-
-                <div class="user">
-
-                    <div class="download-row flex-box">
-                        <i class="fa-regular fa-circle-down"></i>
-                        <span class="hidden"><a href="#">Installa app</a></span>
-                    </div>
-
-                    <div class="user-row flex-box">
-                        <i class="fa-solid fa-circle-user title"></i>
-                        <span class="text-light hidden">John Doe</span>
-                    </div>
-
                 </div>
 
             </div>
@@ -361,7 +367,7 @@
                     <i class="fa-solid fa-bars"></i>
                     <i class="fa-solid fa-display"></i>
                     <i class="fa-solid fa-volume-high"></i>
-                    <input class="time-bar small-time" type="range" min="0.1" max="2" step="0.1">
+                    <input id="slider" class="time-bar small-time" type="range" min="0.1" max="2" step="0.1">
                 </div>
 
             </div>
